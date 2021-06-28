@@ -20,7 +20,7 @@ app.use("/api/cart_item", cartRouter);
 app.use("/api/order_list", orderListRouter);
 
 const CONNECTION_URL =
-  "mongodb+srv://user-1234:vikky1234@first-mern-app.0oqw7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  process.env.MONGO_URL;
 
 app.get("/", (req, res) => {
   res.send("Hello to Youz-Cart ");
@@ -40,13 +40,5 @@ mongoose
   .catch((ex) => {
     console.log(ex);
   });
-
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-//   });
-// }
 
 mongoose.set("useFindAndModify", false);
