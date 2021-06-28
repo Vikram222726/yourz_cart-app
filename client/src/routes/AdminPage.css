@@ -1,0 +1,131 @@
+.admin{
+    padding: 140px 50px 80px 50px;
+    background-color: #E0E0E0;
+    width: 100%;
+    height: 100%;
+}
+
+.admin__wrapper{
+    background-color: #fff;
+    padding: 8px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin__add__tocart{
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.admin__error{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-weight: 600;
+    margin: 15px 0px 20px 0px;
+    margin-bottom: 20px;
+}
+
+.admin__product{
+    margin-left: 25px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.admin__product__name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    width:220px;
+}
+
+.admin__text__field{
+    padding: 7px;
+    padding-left: 12px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #B0B0B0;
+    font-size: 16px;
+}
+
+.admin__description{
+    border:1px solid #B0B0B0;
+}
+
+.admin__save__btn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.admin__save__btn:hover{
+    background-color: #33ff33;
+    font-weight: 600;
+}
+
+.admin__contained__products{
+    margin-top: 40px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    padding: 15px;
+    padding-top: 23px;
+    border-bottom: 1px solid #D8D8D8;
+    
+}
+
+.admin__product__image{
+    height: 125px;
+    width: 120px;
+    margin-left: 32px;
+}
+
+.admin__product__image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.admin__pproduct__name{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.product__contained__wrapper, .admin__prev__products{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.admin__contained__products__head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #686868;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D3D3D3;
+
+}

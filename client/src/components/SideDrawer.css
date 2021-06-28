@@ -1,0 +1,125 @@
+.sidedrawer{
+    width: 65%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidedrawer.show{
+    transform: translateX(0);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.sidebar > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+}
+
+.sidebar__home__text{
+    margin-left: 7px;
+    font-weight: 700;
+}
+
+.sidebar__homelink{
+    color: #000;
+    font-size: 34px;
+}
+
+.sidebar__homelink:hover{
+    color: #808080;
+}
+
+.sidebar__select__agegrp{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #B8B8B8;
+}
+
+.sidebar__select__agegrp:hover{
+    background-color: #989898;
+}
+
+.sidebar__cart{
+    margin-top: 40px;
+}
+
+.cart__link{
+    color: #000;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.sidebar__cart__text{
+    margin-left: 15px;
+    font-size: 24px;
+    display: flex;
+}
+
+.sidebar__cart__text1{
+    margin-top: 3px;
+}
+
+.sidebar__cart__badge{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.sidebar__cart__wrapper{
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #808080;
+}
+
+.sidebar__register__signup{
+    padding: 10px;
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.sidebar__no__admin{
+    display: none;
+}
+
+.sidebar__admin{
+    color: #000;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 5px;
+    border-bottom: 2px solid #000;
+}
+
+.sidebar__admin:hover{
+    color: #282828;
+}

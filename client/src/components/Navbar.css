@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Pacifico&display=swap');
+.navbar{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #24252A;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    padding: 10px 30px 5px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar__logo__firstname{
+    font-size: 30px;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.navbar__logo__secondname{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -10px;
+    font-family: 'Pacifico', sans-serif;
+    justify-content: start;
+}
+
+.navbar__home__logo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.navbar__home__logo:hover{
+    color: #DCDCDC;
+}
+
+.navbar__home__text{
+    font-size: 14px;
+}
+
+.navbar__options ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+}
+
+.navbar__options ul li{
+    width: 120px;
+    list-style: none;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.navbar__options__agegrp{
+    background-color: #303030;
+    padding: 12px;
+    margin: 15px 15px 10px 10px;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navbar__options__agegrp:hover{
+    background-color: #484848;
+}
+
+.navbar__cart{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar__cart__wrapper{
+    padding: 12px;
+    border-radius: 14px;
+    background: #404040;
+    display: flex;
+}
+
+.navbar__cart__wrapper:hover{
+    background: #585858;
+    cursor: pointer;
+}
+
+.navbar__cart__wrapper > a{
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+}
+
+.navbar__cart__wrapper > a > span{
+    margin-left:8px;
+}
+
+.cart__text{
+    display: flex;
+    margin: 3px 0px 0px 8px;
+    font-size: 20px;
+}
+
+.navbar__admin{
+    display: flex;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 18px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+}
+
+.navbar__admin:hover{
+    color: #E8E8E8;
+    font-weight: 500;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.navbar__noAdmin{
+    display: none;
+}
+
+.navbar__cart__badge{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navbar__register{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__register__signup{
+    padding: 14px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+}
+
+.navbar__register__signup:hover{
+    background-color: #DCDCDC;
+}
+
+.navbar__hamburger{
+    width:30px;
+    height: 30px;
+    display: none;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 23px;
+}
+
+.navbar__hamburger > div{
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.navbar__hamburger:hover > div{
+    background-color: #B8B8B8;
+}
+
+@media (max-width: 960px){
+    .navbar__register, 
+    .navbar__cart,
+    .navbar__options{
+        display: none;
+    }
+    .navbar__hamburger{
+        display: flex;
+    }
+}
+
+@media (max-width: 500px){
+    .navbar__logo__firstname{
+        font-size: 18px;
+    }
+    .navbar__logo__secondname{
+        font-size: 12px;
+    }
+    .navbar__hamburger{
+        margin-top: 8px
+    }
+}
